@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Detalii despre o lucrare din portofoliul Atelier de Pictură." />
+  <meta name="keywords" content="pictură, artă, pânză, ulei, acrilic, portofoliu artistic" />
+  <meta name="author" content="Artist" />
+  <title>Atelier de Pictură</title>
+  <link rel="icon" href="favicon.svg?v=20260323-5" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css?v=20260323-3" />
+</head>
+<body class="product-page">
+  <header class="topbar">
+    <div class="container">
+      <a href="index.html#acasa" class="brand" aria-label="Mergi la pagina principală">
+        <strong>Atelier de Pictură</strong>
+        <span>Picturi lucrate manual pe pânză</span>
+      </a>
+
+      <nav aria-label="Meniul principal">
+        <ul class="menu">
+          <li><a href="index.html#despre">Despre mine</a></li>
+          <li><a href="produse.html">Lucrări</a></li>
+          <li><a href="index.html#colaborari">Colaborări</a></li>
+          <li><a href="index.html#proces">Proces artistic</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-hero">
+      <div class="container">
+        <div id="product-not-found" class="card product-not-found" hidden>
+          <h1>Lucrarea nu a fost găsită</h1>
+          <p>Linkul este incomplet sau lucrarea nu mai este disponibilă în această listă.</p>
+          <div class="hero-actions">
+            <a href="produse.html" class="btn btn-primary">Înapoi la lucrări</a>
+            <a href="contact.html" class="btn btn-secondary">Contact</a>
+          </div>
+        </div>
+
+        <div id="product" class="product-grid">
+          <div class="product-image-wrap">
+            <img id="product-image" src="" alt="" loading="lazy" />
+            <div id="product-thumbs" class="product-thumbs" hidden></div>
+          </div>
+
+          <div class="product-info">
+            <span id="product-tag" class="eyebrow"></span>
+            <h1 id="product-title"></h1>
+            <p id="product-summary" class="product-summary"></p>
+
+            <dl class="product-specs" aria-label="Detalii tehnice">
+              <div class="product-spec">
+                <dt>Tehnică</dt>
+                <dd id="product-technique"></dd>
+              </div>
+              <div class="product-spec">
+                <dt>Dimensiuni</dt>
+                <dd id="product-size"></dd>
+              </div>
+              <div class="product-spec">
+                <dt>Disponibilitate</dt>
+                <dd id="product-availability"></dd>
+              </div>
+            </dl>
+
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary">Cere detalii</a>
+              <a href="produse.html" class="btn btn-secondary">Vezi toate lucrările</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-details">
+      <div class="container">
+        <article class="card">
+          <h2>Descriere</h2>
+          <p id="product-description" class="product-description"></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Atelier de Pictură. Toate drepturile rezervate.</p>
+      <p>Portofoliu artistic | Picturi originale | Colaborări creative</p>
+    </div>
+  </footer>
+
+  <script src="produse.js"></script>
+  <script src="produs.js"></script>
+</body>
+</html>
